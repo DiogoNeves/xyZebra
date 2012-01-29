@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Model>
+	<Meshes>
+		<Mesh name="cube">
+			<Vertices>
+				-1.0 -1.0 0.0  1.0 -1.0 0.0  1.0 1.0 0.0  -1.0 1.0 0.0
+			</Vertices>
+			<Normals>
+				0.0 0.0 1.0  0.0 0.0 1.0  0.0 0.0 1.0  0.0 0.0 1.0
+			</Normals>
+      <!-- Not updated and defaults to white
+      <Colours>0.0 0.0 0.0 1.0  1.0 0.0 0.0 1.0  1.0 1.0 0.0 1.0  0.0 1.0 0.0 1.0  0.0 0.0 1.0 1.0  1.0 0.0 1.0 1.0  1.0 1.0 1.0 1.0  0.0 1.0 1.0 1.0</Colours>
+      -->
+      <TexUV>
+      	1.0 1.0  0.0 1.0  0.0 0.0  1.0 0.0
+      </TexUV>
+      <Indices>
+      	0 1 2  2 3 0
+      </Indices>
+      <Instances>
+        <Instance name="big">
+        	<Texture>images/texture.png</Texture>
+        	<VertexShader>effects/simple_vertex.xyz.shader</VertexShader>
+		      <Translation>-1.0 0.0 -8.0</Translation>
+		      <Rotation>1.0 0.0 0.0</Rotation>
+		      <Scale>1.0 1.0 1.0</Scale>
+	      </Instance>
+      </Instances>
+		</Mesh>
+	</Meshes>
+</Model>
